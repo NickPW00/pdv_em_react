@@ -1,0 +1,478 @@
+[
+  {
+      "id": "1",
+      "nome": "Garrafa de Água",
+      "preco": 2.99,
+      "imagemuri": "",
+      "codigo": "110000"
+  },
+  {
+      "id": "2",
+      "nome": "Queijo Fresco",
+      "preco": 12.99,
+      "imagemuri": "",
+      "codigo": "220101"
+  },
+  {
+      "id": "3",
+      "nome": "Pacote de Biscoitos",
+      "preco": 3.49,
+      "imagemuri": "",
+      "codigo": "550000"
+  },
+  {
+      "id": "4",
+      "nome": "Pão de Forma",
+      "preco": 1.99,
+      "imagemuri": "",
+      "codigo": "660101"
+  },
+  {
+      "id": "5",
+      "nome": "Tempero de Ervas",
+      "preco": 1.25,
+      "imagemuri": "",
+      "codigo": "880000"
+  },
+  {
+      "id": "6",
+      "nome": "Leite",
+      "preco": 2.49,
+      "imagemuri": "",
+      "codigo": "1010000"
+  },
+  {
+      "id": "7",
+      "nome": "Pacote de Arroz",
+      "preco": 4.29,
+      "imagemuri": "",
+      "codigo": "1510000"
+  },
+  {
+      "id": "8",
+      "nome": "Pacote de Massa",
+      "preco": 1.89,
+      "imagemuri": "",
+      "codigo": "1810000"
+  },
+  {
+      "id": "9",
+      "nome": "Manteiga",
+      "preco": 2.20,
+      "imagemuri": "",
+      "codigo": "1910000"
+  },
+  {
+      "id": "10",
+      "nome": "Bolo de Chocolate",
+      "preco": 8.99,
+      "imagemuri": "",
+      "codigo": "2110101"
+  },
+  {
+      "id": "11",
+      "nome": "Café em Grãos",
+      "preco": 9.75,
+      "imagemuri": "",
+      "codigo": "2210000"
+  },
+  {
+      "id": "12",
+      "nome": "Farinha de Trigo",
+      "preco": 2.49,
+      "imagemuri": "",
+      "codigo": "2310000"
+  },
+  {
+      "id": "13",
+      "nome": "Açúcar",
+      "preco": 1.29,
+      "imagemuri": "",
+      "codigo": "2410000"
+  },
+  {
+      "id": "14",
+      "nome": "Cerveja",
+      "preco": 3.99,
+      "imagemuri": "",
+      "codigo": "2510000"
+  },
+  {
+      "id": "15",
+      "nome": "Vinho Tinto",
+      "preco": 12.50,
+      "imagemuri": "",
+      "codigo": "2610000"
+  },
+  {
+      "id": "16",
+      "nome": "Chocolate ao Leite",
+      "preco": 1.75,
+      "imagemuri": "",
+      "codigo": "2710000"
+  },
+  {
+      "id": "17",
+      "nome": "Cereal Matinal",
+      "preco": 4.99,
+      "imagemuri": "",
+      "codigo": "2810000"
+  },
+  {
+      "id": "18",
+      "nome": "Pacote de Batatas Fritas",
+      "preco": 2.89,
+      "imagemuri": "",
+      "codigo": "2910000"
+  },
+  {
+      "id": "19",
+      "nome": "Sabonete",
+      "preco": 0.99,
+      "imagemuri": "",
+      "codigo": "3010000"
+  },
+  {
+      "id": "20",
+      "nome": "Detergente Líquido",
+      "preco": 2.25,
+      "imagemuri": "",
+      "codigo": "3110000"
+  },
+  {
+      "id": "21",
+      "nome": "Shampoo",
+      "preco": 3.49,
+      "imagemuri": "",
+      "codigo": "3210000"
+  },
+  {
+      "id": "22",
+      "nome": "Condicionador",
+      "preco": 3.49,
+      "imagemuri": "",
+      "codigo": "3310000"
+  },
+  {
+      "id": "23",
+      "nome": "Papel Higiênico",
+      "preco": 1.99,
+      "imagemuri": "",
+      "codigo": "3410000"
+  },
+  {
+      "id": "24",
+      "nome": "Creme Dental",
+      "preco": 2.49,
+      "imagemuri": "",
+      "codigo": "3510000"
+  },
+  {
+      "id": "25",
+      "nome": "Molho de Tomate",
+      "preco": 1.25,
+      "imagemuri": "",
+      "codigo": "3610000"
+  },
+  {
+      "id": "26",
+      "nome": "Salgadinho de Queijo",
+      "preco": 1.99,
+      "imagemuri": "",
+      "codigo": "3710000"
+  },
+  {
+      "id": "27",
+      "nome": "Creme de Leite",
+      "preco": 1.75,
+      "imagemuri": "",
+      "codigo": "3810000"
+  },
+  {
+      "id": "28",
+      "nome": "Leite Condensado",
+      "preco": 2.49,
+      "imagemuri": "",
+      "codigo": "3910000"
+  },
+  {
+      "id": "29",
+      "nome": "Café Solúvel",
+      "preco": 4.99,
+      "imagemuri": "",
+      "codigo": "4010000"
+  },
+  {
+      "id": "30",
+      "nome": "Pacote de Amendoim",
+      "preco": 1.79,
+      "imagemuri": "",
+      "codigo": "4110000"
+  },
+  {
+      "id": "31",
+      "nome": "Mel",
+      "preco": 5.25,
+      "imagemuri": "",
+      "codigo": "4210000"
+  },
+  {
+      "id": "32",
+      "nome": "Óleo de Soja",
+      "preco": 2.99,
+      "imagemuri": "",
+      "codigo": "4310000"
+  },
+  {
+      "id": "33",
+      "nome": "Molho de Soja",
+      "preco": 1.49,
+      "imagemuri": "",
+      "codigo": "4410000"
+  },
+  {
+      "id": "34",
+      "nome": "Sal",
+      "preco": 0.79,
+      "imagemuri": "",
+      "codigo": "4510000"
+  },
+  {
+      "id": "35",
+      "nome": "Azeite de Oliva",
+      "preco": 6.99,
+      "imagemuri": "",
+      "codigo": "4610000"
+  },
+  {
+      "id": "36",
+      "nome": "Vinagre",
+      "preco": 1.25,
+      "imagemuri": "",
+      "codigo": "4710000"
+  },
+  {
+      "id": "37",
+      "nome": "Saco de Lixo",
+      "preco": 3.25,
+      "imagemuri": "",
+      "codigo": "4810000"
+  },
+  {
+      "id": "38",
+      "nome": "Papel Alumínio",
+      "preco": 2.99,
+      "imagemuri": "",
+      "codigo": "4910000"
+  },
+  {
+      "id": "39",
+      "nome": "Pacote de Guardanapos",
+      "preco": 1.15,
+      "imagemuri": "",
+      "codigo": "5010000"
+  },
+  {
+      "id": "40",
+      "nome": "Luvas Descartáveis",
+      "preco": 4.75,
+      "imagemuri": "",
+      "codigo": "5110000"
+  },
+  {
+      "id": "41",
+      "nome": "Limpador Multiuso",
+      "preco": 2.99,
+      "imagemuri": "",
+      "codigo": "5210000"
+  },
+  {
+      "id": "42",
+      "nome": "Pacote de Sacos Ziploc",
+      "preco": 1.89,
+      "imagemuri": "",
+      "codigo": "5310000"
+  },
+  {
+      "id": "43",
+      "nome": "Alho",
+      "preco": 0.40,
+      "imagemuri": "",
+      "codigo": "5410101"
+  },
+  {
+      "id": "44",
+      "nome": "Cebola",
+      "preco": 0.30,
+      "imagemuri": "",
+      "codigo": "5510101"
+  },
+  {
+      "id": "45",
+      "nome": "Pão de Queijo",
+      "preco": 4.99,
+      "imagemuri": "",
+      "codigo": "5610101"
+  },
+  {
+      "id": "46",
+      "nome": "Refrigerante",
+      "preco": 2.75,
+      "imagemuri": "",
+      "codigo": "5710000"
+  },
+  {
+      "id": "47",
+      "nome": "Suco de Laranja",
+      "preco": 3.25,
+      "imagemuri": "",
+      "codigo": "5810000"
+  },
+  {
+      "id": "48",
+      "nome": "Iogurte",
+      "preco": 1.99,
+      "imagemuri": "",
+      "codigo": "5910000"
+  },
+  {
+      "id": "49",
+      "nome": "Presunto",
+      "preco": 8.49,
+      "imagemuri": "",
+      "codigo": "6010000"
+  },
+  {
+      "id": "50",
+      "nome": "Papel Toalha",
+      "preco": 2.99,
+      "imagemuri": "",
+      "codigo": "6110000"
+  },
+  {
+      "id": "51",
+      "nome": "Azeitonas",
+      "preco": 1.75,
+      "imagemuri": "",
+      "codigo": "6210000"
+  },
+  {
+      "id": "52",
+      "nome": "Geleia",
+      "preco": 3.99,
+      "imagemuri": "",
+      "codigo": "6310000"
+  },
+  {
+      "id": "53",
+      "nome": "Biscoito de Chocolate",
+      "preco": 1.49,
+      "imagemuri": "",
+      "codigo": "6410000"
+  },
+  {
+      "id": "54",
+      "nome": "Molho de Pimenta",
+      "preco": 1.25,
+      "imagemuri": "",
+      "codigo": "6510000"
+  },
+  {
+      "id": "55",
+      "nome": "Pacote de Guardanapos",
+      "preco": 1.15,
+      "imagemuri": "",
+      "codigo": "6610000"
+  },
+  {
+      "id": "56",
+      "nome": "Sorvete",
+      "preco": 5.99,
+      "imagemuri": "",
+      "codigo": "6710000"
+  },
+  {
+      "id": "57",
+      "nome": "Leite Condensado",
+      "preco": 2.49,
+      "imagemuri": "",
+      "codigo": "6810000"
+  },
+  {
+      "id": "58",
+      "nome": "Chocolate Amargo",
+      "preco": 2.75,
+      "imagemuri": "",
+      "codigo": "6910000"
+  },
+  {
+      "id": "59",
+      "nome": "Creme de Amendoim",
+      "preco": 3.49,
+      "imagemuri": "",
+      "codigo": "7010000"
+  },
+  {
+      "id": "60",
+      "nome": "Café Instantâneo",
+      "preco": 4.49,
+      "imagemuri": "",
+      "codigo": "7110000"
+  },
+  {
+      "id": "61",
+      "nome": "Pacote de Nozes",
+      "preco": 3.99,
+      "imagemuri": "",
+      "codigo": "7210000"
+  },
+  {
+      "id": "62",
+      "nome": "Chá",
+      "preco": 2.25,
+      "imagemuri": "",
+      "codigo": "7310000"
+  },
+  {
+      "id": "63",
+      "nome": "Bolacha",
+      "preco": 1.49,
+      "imagemuri": "",
+      "codigo": "7410000"
+  },
+  {
+      "id": "64",
+      "nome": "Água Tônica",
+      "preco": 2.75,
+      "imagemuri": "",
+      "codigo": "7510000"
+  },
+  {
+      "id": "65",
+      "nome": "Amendoim Torrado",
+      "preco": 1.99,
+      "imagemuri": "",
+      "codigo": "7610000"
+  },
+  {
+      "id": "66",
+      "nome": "Pão de Alho",
+      "preco": 3.99,
+      "imagemuri": "",
+      "codigo": "7710101"
+  },
+  {
+      "id": "67",
+      "nome": "Gelatina",
+      "preco": 0.99,
+      "imagemuri": "",
+      "codigo": "7810000"
+  },
+  {
+      "id": "68",
+      "nome": "Guardanapos de Papel",
+      "preco": 0.89,
+      "imagemuri": "",
+      "codigo": "8010000"
+  }
+]
