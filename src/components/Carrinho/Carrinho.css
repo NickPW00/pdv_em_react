@@ -23,12 +23,18 @@
 }
 
 .menu_total{
-  width: 98%;
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  width: 97%;
   height: 8vh;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
   border: 2px solid #000;
-  
+}
+.menu_total_resultado{
+  font-weight: 800;
 }
 .menu_confirm{
   display: flex;
@@ -37,8 +43,8 @@
   height: 8vh;
 }
 .menu_confirm_metodo{
-  background: #733333;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .menu_confirm_finalizar{
