@@ -13,15 +13,11 @@ function MenuCarrinho() {
   )
 }
 
-
-
-
-
 function Carrinho() {
 
 
   return (
-    <div>
+    <div className='container_cart'>
 
       <MenuCarrinho/>
     </div>
