@@ -1,0 +1,15 @@
+.menu_cart_{
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+
+.menu_total{
+  width: 100%;
+  background-color: white;
+}
+.menu_confirm{
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
