@@ -4,7 +4,7 @@ import Carrinho from './components/Carrinho/Carrinho';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <Carrinho/>
     </div>
   );
