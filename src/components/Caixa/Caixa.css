@@ -1,0 +1,24 @@
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclas{
+    width: 100%;
+    justify-self: center;
+}
+
+.teclas__apagar{
+    grid-column: span 2;
+}
+
+.teclas__confirmar{
+    grid-column: span 3;
+}
+
+.teclas, .teclas__apagar, .teclas__confirmar{
+    height: 50px;
+}

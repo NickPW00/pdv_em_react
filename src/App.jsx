@@ -1,11 +1,15 @@
 import './App.css'
 import Carrinho from './components/Carrinho/Carrinho';
+import Caixa from './components/Caixa/Caixa'
 
 
 function App() {
   return (
     <div className='main'>
-      <Carrinho/>
+      {/* <Carrinho/> */}
+      <br />
+      <br />
+      <Caixa/>
     </div>
   );
 }
