@@ -9,6 +9,10 @@
 
 }
 
+.hidden {
+  display: none;
+}
+
 
 
 
@@ -22,12 +26,13 @@
   width: 100%;
 }
 
+
 .menu_total{
   display: flex;
   
   justify-content: space-around;
   align-items: center;
-  width: 97%;
+  width: 92%;
   height: 8vh;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
@@ -39,7 +44,7 @@
 .menu_confirm{
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  width: 92%;
   height: 8vh;
 }
 .menu_confirm_metodo{
