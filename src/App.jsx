@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='main'>
       {/* <Carrinho/> */}
-      {/* <OpenCart/> */}
+      <OpenCart/>
       <br />
       <br />
       <Caixa/>

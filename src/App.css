@@ -1,7 +1,11 @@
+html{
+  background-color: rgb(172, 172, 172);
+}
 .main{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
+
 }
