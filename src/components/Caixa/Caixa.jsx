@@ -24,8 +24,12 @@ export default function EscreverCodigo() {
     selecionado ? setQuant(quant + item) : setCodigo(codigo + item)
   }
 
-  function handleApagarNumeros(item) {
+  function handleApagarNumeros() {
     selecionado ? setQuant('') : setCodigo('')
+  }
+
+  function handleConfirmarNumeros() {
+    setQuant('');setCodigo('')
   }
 
   return (
@@ -64,7 +68,7 @@ export default function EscreverCodigo() {
         />
         <Teclas 
           className={'teclas__confirmar'}
-          funcao={handleApagarNumeros}
+          funcao={handleConfirmarNumeros}
           numero={'Confirmar'}
         />
       </div>
