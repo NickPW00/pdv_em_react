@@ -38,12 +38,12 @@ export default function EscreverCodigo() {
       {/* Inputs desabilitados para não serem acessados pelo teclado do computador. */}
       {/* Inputs envoltos em div para que assim as divs contenham a função que faça a conversão de onde será escrito. */}
       <div onClick={() => setSelecionado(false)}>
-        <input type='text' value={codigo}  disabled/>
+        <input className={`caixa__codigo_input ${selecionado ? '' : 'borda_grossa'}`} type='text' value={codigo}  disabled/>
       </div>
       <div className='caixa__quant'>
         <span>Quantidade</span>
         <div onClick={() => setSelecionado(true)}>
-          <input type='text' value={quant} disabled/>
+          <input className={`caixa__quant_input ${selecionado ? 'borda_grossa' : ''}`} type='text' value={quant} disabled/>
         </div>
       </div>
       <div className='teclado'>

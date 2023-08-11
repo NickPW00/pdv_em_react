@@ -9,6 +9,11 @@
 
 .caixa__quant{
     display: flex;
+    justify-content: space-around;
+}
+
+.caixa__quant_input{
+    width: 30px;
 }
 
 .teclado{
@@ -34,4 +39,9 @@
 
 .teclas, .teclas__apagar, .teclas__confirmar{
     height: 50px;
+}
+
+.borda_grossa{
+    border: 2px solid grey;
+    border-radius: 5px;
 }
