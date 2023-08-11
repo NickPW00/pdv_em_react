@@ -1,3 +1,16 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa > div, .caixa > input{
+    margin-bottom: 10px;
+}
+
+.caixa__quant{
+    display: flex;
+}
+
 .teclado{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
