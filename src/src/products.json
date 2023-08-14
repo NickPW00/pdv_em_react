@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Maçãs",
+    "price": 2.5,
+    "pricePerKg": 2.0,
+    "quantityGrams": 500
+  },
+  {
+    "id": 2,
+    "name": "Bananas",
+    "price": 1.8,
+    "pricePerKg": 1.5,
+    "quantityGrams": 600
+  }
+  
+]
