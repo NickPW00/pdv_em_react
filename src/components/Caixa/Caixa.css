@@ -1,10 +1,21 @@
 .caixa{
     display: flex;
+    margin-top: 1vh;
     flex-direction: column;
+    width: 100%;
 }
 
 .caixa > div, .caixa > input{
     margin-bottom: 10px;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 16pt;
+}
+
+.caixa__codigo_input{
+    width: 98%;
+    height: 24px;
+    border-radius: 5px;
 }
 
 .caixa__quant{
@@ -13,32 +24,45 @@
 }
 
 .caixa__quant_input{
-    width: 30px;
+    width: 50vw;
+    height: 24px;
+    border-radius: 5px;
 }
 
 .teclado{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-content: center;
+    gap: 8px;
+    border-radius: 5px;
     align-items: center;
+    height: 100%;
 }
 
 .teclas{
     width: 100%;
     justify-self: center;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .teclas__apagar{
     grid-column: span 2;
+    background-color: #733333;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
 }
 
 .teclas__confirmar{
     grid-column: span 3;
+    background-color: #424B6A;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
 }
 
 .teclas, .teclas__apagar, .teclas__confirmar{
-    height: 50px;
+    height: 72px;
 }
 
 .borda_grossa{
