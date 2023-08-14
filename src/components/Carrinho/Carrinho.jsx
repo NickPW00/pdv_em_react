@@ -1,7 +1,7 @@
 import Metodo from '../Metodo/Metodo';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import produtosData from '../../data/data.json'
-import produtosAdicionados from '../Caixa/Caixa';
+import { produtosAdicionados } from '../Caixa/Caixa';
 import './Carrinho.css'
 
 
@@ -12,6 +12,14 @@ function MenuCarrinho() {
   const handleBotaoClick = () => {
     setMostrarMetodo(true);
   };
+
+  useEffect(() => {
+    let soma = 0
+    for (let i = 0; i < produtosAdicionados.length; i++) {
+      soma += produtosAdicionados[i].precoTotal;
+    }
+    setValorTotal(soma.toFixed(2))
+  }, [produtosAdicionados])
 
   return (
     <div className='menu_cart'>

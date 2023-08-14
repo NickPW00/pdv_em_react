@@ -58,7 +58,8 @@ export default function EscreverCodigo() {
         {
           id: produtoEncontrado.id,
           nome: produtoEncontrado.nome,
-          preco: produto.preco,
+          preco: produtoEncontrado.preco,
+          precoTotal: produtoEncontrado.preco * quant,
           imagemuri: produtoEncontrado.imagemuri ,
           codigo: codigo,
           quant: quant
