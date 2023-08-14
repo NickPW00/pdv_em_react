@@ -2,6 +2,8 @@ import './Caixa.css';
 import React, {useState, useEffect} from 'react'
 import produtosData from '../../data/data.json'
 
+export const produtosAdicionados = []
+
 /* Componente base para os botões. */
 function Teclas({ numero, funcao, className }) {
   return(
@@ -12,7 +14,7 @@ function Teclas({ numero, funcao, className }) {
 function InputsDiversos({onClick , className, value}) {
   return (
     <div onClick={onClick}>
-      <input className={className} type='text' value={value} disabled/>
+      <input className={className} type='number' value={value} disabled/>
     </div>
   )
 }
@@ -22,15 +24,16 @@ export default function EscreverCodigo() {
   const [quant, setQuant] = useState('');
   const [produto, setProduto] = useState('');
   const [selecionado, setSelecionado] = useState(true);
-  const numeros = [];
+  const numeros = []; 
+  
+  const prodNaoEncontrado = 'Produto não encontrado'
 
   useEffect(() => {
     const produtoEncontrado = produtosData.find(produto => produto.codigo === codigo);
-    console.log("Estou aqui")
     if (produtoEncontrado) {
       setProduto(produtoEncontrado.nome); // Defina qual propriedade do produto deseja exibir
     } else {
-      setProduto('Produto não encontrado');
+      setProduto(prodNaoEncontrado);
     }
   }, [codigo])
 
@@ -49,7 +52,17 @@ export default function EscreverCodigo() {
   }
 
   function handleConfirmarNumeros() {
-    setQuant('');setCodigo('')
+    if (produto !== prodNaoEncontrado && quant !== '') {
+      produtosAdicionados.push(
+        {
+          codigo: codigo,
+          quantidade: quant
+        }
+      )
+      console.log(produtosAdicionados)
+      setQuant('');
+      setCodigo('');
+    }
   }
 
   return (
