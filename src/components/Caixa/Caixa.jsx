@@ -14,7 +14,7 @@ function Teclas({ numero, funcao, className }) {
 function InputsDiversos({onClick , className, value}) {
   return (
     <div onClick={onClick}>
-      <input className={className} type='number' value={value} disabled/>
+      <input className={className} type='text' value={value} disabled/>
     </div>
   )
 }
@@ -53,10 +53,15 @@ export default function EscreverCodigo() {
 
   function handleConfirmarNumeros() {
     if (produto !== prodNaoEncontrado && quant !== '') {
+      const produtoEncontrado = produtosData.find(produto => produto.codigo === codigo);
       produtosAdicionados.push(
         {
+          id: produtoEncontrado.id,
+          nome: produtoEncontrado.nome,
+          preco: produto.preco,
+          imagemuri: produtoEncontrado.imagemuri ,
           codigo: codigo,
-          quantidade: quant
+          quant: quant
         }
       )
       console.log(produtosAdicionados)
