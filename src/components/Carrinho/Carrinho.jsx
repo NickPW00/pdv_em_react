@@ -5,6 +5,7 @@ import produtosData from '../../data/data.json'
 import { produtosAdicionados } from '../Caixa/Caixa';
 import './Carrinho.css'
 
+let chaveAtivacao = []
 
 function MenuCarrinho() {
   //pro botao do metodo de pagmaneto
@@ -20,7 +21,7 @@ function MenuCarrinho() {
       soma += produtosAdicionados[i].precoTotal;
     }
     setValorTotal(soma.toFixed(2))
-  }, [produtosAdicionados])
+  }, [produtosAdicionados, chaveAtivacao])
 
   return (
     <div className='menu_cart'>
@@ -43,36 +44,44 @@ function MenuCarrinho() {
 }
 
 function Carrinho() {
-  
   const [elementos, setElementos] = useState(produtosAdicionados);
+  const [lista, setLista] = useState("");
 
   const removerElemento = (index) => {
     const novosElementos = [...elementos];
     novosElementos.splice(index, 1);
-    console.log(novosElementos)
+    produtosAdicionados.splice(index, 1)
     setElementos(novosElementos);
+    chaveAtivacao = [...novosElementos]
   };
 
-  /* {elementos.map((elemento, index) => (
-    <li key={index}>
-      {elemento} <button onClick={() => removerElemento(index)}>Remover</button>
-    </li>
-  ))} */
+  const limparLista = () => {
+    setElementos([]);
+  };
+
+  function novoMap() {
+    return (
+      elementos.map((produto, index) => (
+        <ProductCard 
+          key={produto.id}
+          product={produto}
+          onDelete={() => removerElemento(index)}
+        />
+      ))
+    );
+  } 
+
+  useEffect(() => {
+    setLista(novoMap());
+  }, [elementos]);
 
   return (
     <div className='container_cart'>
-        {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
-        {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
+      {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
+      {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
       <MenuCarrinho/>
-      {produtosAdicionados
-        .map((produto, index) => 
-          <ProductCard 
-            key={produto.id}
-            product={produto}
-            onDelete={() => removerElemento(index)}
-          />
-        )
-      }
+      {/* <button onClick={limparLista}>Limpar Carrinho</button> */}
+      {lista}
     </div>
   );
 }
