@@ -6,16 +6,11 @@
   background-color: #D9D9D9;
   border-radius: 12px;
   border: 1px solid #000;
-
 }
 
 .hidden {
   display: none;
 }
-
-
-
-
 
 .menu_cart{
   display: flex;
@@ -25,7 +20,6 @@
   align-items: center;
   width: 100%;
 }
-
 
 .menu_total{
   display: flex;
@@ -38,15 +32,22 @@
   border-radius: 12px;
   border: 2px solid #000;
 }
+
 .menu_total_resultado{
   font-weight: 800;
 }
+
 .menu_confirm{
   display: flex;
   justify-content: space-between;
   width: 92%;
   height: 8vh;
 }
+
+.menu_metodo_selecionado {
+  padding: 5px;
+}
+
 .menu_confirm_metodo{
   background: #ffffff;
   color: rgb(0, 0, 0);
@@ -63,4 +64,3 @@
   border-radius: 12px;
   border: 2px solid #000
 }
-
