@@ -1,5 +1,6 @@
 import Metodo from '../Metodo/Metodo';
 import React, {useState, useEffect} from 'react';
+import ProductCard from '../ProductCard/ProductCard';
 import produtosData from '../../data/data.json'
 import { produtosAdicionados } from '../Caixa/Caixa';
 import './Carrinho.css'
@@ -42,14 +43,36 @@ function MenuCarrinho() {
 }
 
 function Carrinho() {
+  
+  const [elementos, setElementos] = useState(produtosAdicionados);
 
+  const removerElemento = (index) => {
+    const novosElementos = [...elementos];
+    novosElementos.splice(index, 1);
+    console.log(novosElementos)
+    setElementos(novosElementos);
+  };
+
+  /* {elementos.map((elemento, index) => (
+    <li key={index}>
+      {elemento} <button onClick={() => removerElemento(index)}>Remover</button>
+    </li>
+  ))} */
 
   return (
     <div className='container_cart'>
         {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
         {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
       <MenuCarrinho/>
-
+      {produtosAdicionados
+        .map((produto, index) => 
+          <ProductCard 
+            key={produto.id}
+            product={produto}
+            onDelete={() => removerElemento(index)}
+          />
+        )
+      }
     </div>
   );
 }
