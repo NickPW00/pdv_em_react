@@ -21,7 +21,7 @@ function MenuCarrinho() {
       soma += produtosAdicionados[i].precoTotal;
     }
     setValorTotal(soma.toFixed(2));
-  }, [produtosAdicionados]);
+  }, [produtosAdicionados, chaveAtivacao]);
 
   const [selectedMethod, setSelectedMethod] = useState('');
 
