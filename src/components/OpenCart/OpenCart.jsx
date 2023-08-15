@@ -6,11 +6,11 @@ function OpenCart() {
   const [showCart, setShowCart] = useState(false);
 
   const handleShowCart = () => {
-    setShowCart(!showCart); // Invert the current value of showCart
+    setShowCart(!showCart);
   };
 
   const handleCloseCart = () => {
-    setShowCart(false); // Set showCart to false to close the cart
+    setShowCart(false);
   };
 
   return (
