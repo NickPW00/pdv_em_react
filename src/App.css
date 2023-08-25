@@ -1,5 +1,9 @@
-html{
-  background-color: rgb(172, 172, 172);
+html body{
+  background-color: #725844;
+  width: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 .main{
   display: flex;

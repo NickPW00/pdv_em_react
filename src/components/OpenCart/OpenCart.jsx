@@ -21,9 +21,6 @@ function OpenCart() {
       {showCart && (
         <div className='cart_overlay'>
           <div className='cart_container'>
-            <button className='close_cart_btn' onClick={handleCloseCart}>
-              FECHAR CARRINHO
-            </button>
             <Carrinho />
           </div>
         </div>

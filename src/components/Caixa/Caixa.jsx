@@ -72,8 +72,14 @@ export default function EscreverCodigo() {
   }
 
   return (
+
     <div className='caixa'>
-      <input type='text' value={produto} disabled/>
+
+    <div className='inputbox'>
+
+    
+
+      <input class='caixa_resul' type='text' value={produto} disabled/>
       {/* Inputs desabilitados para não serem acessados pelo teclado do computador. */}
       {/* Inputs envoltos em div para que assim as divs contenham a função que faça a conversão de onde será escrito. */}
       <InputsDiversos 
@@ -89,6 +95,9 @@ export default function EscreverCodigo() {
           value={quant}
         />
       </div>
+
+      </div>
+
       <div className='teclado'>
       {/* Map para criar as teclas com numero. */}
         {
@@ -118,3 +127,9 @@ export default function EscreverCodigo() {
     </div>
   )
 }
+
+// const styles = StyleSheet.create({
+//   container: {},
+//   fundo: {},
+
+// });

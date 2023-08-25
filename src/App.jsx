@@ -9,8 +9,7 @@ function App() {
     <div className='main'>
       {/* <Carrinho/> */}
       <OpenCart/>
-      <br />
-      <br />
+
       <Caixa/>
     </div>
   );
