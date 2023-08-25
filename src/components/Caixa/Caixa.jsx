@@ -23,18 +23,21 @@ export default function EscreverCodigo() {
   const [codigo, setCodigo] = useState('');
   const [quant, setQuant] = useState('');
   const [produto, setProduto] = useState('');
-  const [selecionado, setSelecionado] = useState(true);
+  const [selecionado, setSelecionado] = useState(false);
   const numeros = []; 
   
-  const prodNaoEncontrado = 'Produto não encontrado'
+  const prodNaoEncontrado = 'Produto não encontrado...'
+  const buscProd = 'Busque seu produto'
+  const prodAdicionado = 'Produto adicionado ao Carrinho!'
 
   useEffect(() => {
     const produtoEncontrado = produtosData.find(produto => produto.codigo === codigo);
     if (produtoEncontrado) {
       setProduto(produtoEncontrado.nome); // Defina qual propriedade do produto deseja exibir
-    } else {
+    } else if (!produtoEncontrado && codigo !== ''){
       setProduto(prodNaoEncontrado);
-    }
+    } else {
+      setProduto(buscProd);    }
   }, [codigo])
 
   /* Um FOR para criar os numeros que quer nas Teclas, para mais tarde, fazer um map */
