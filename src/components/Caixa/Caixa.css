@@ -12,6 +12,12 @@
     bottom: 0;
 }
 
+.caixa_codigo_div{
+    display: flex;
+}
+.caixa_quant_div{
+    display: flex;
+}
 .inputbox{
     display: flex;
     flex-direction: column;
@@ -50,13 +56,13 @@
 
 .teclado{
     display: grid;
-    width: 90%;
+    width: 80%;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 4px;
 }
 
 .teclas{
-    width: 100%;
+    width: 102px;
     justify-self: center;
     border-radius: 10px;
     background-color: #332E2E;
@@ -83,12 +89,13 @@
     color: white;
     font-size: 24px;
     font-weight: 800;
+    width: 100%;
     border: none;
     color: white;
 }
 
 .teclas, .teclas__apagar, .teclas__confirmar{
-    height: 84px;
+    height: 102px;
 }
 
 .borda_grossa{
