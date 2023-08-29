@@ -38,6 +38,7 @@
     background-color: #332E2E;
     height: 48px;
     border-radius: 100px;
+    color: white;
 }
 
 .caixa__quant{
@@ -52,6 +53,7 @@
     width: 50vw;
     height: 24px;
     border-radius: 100px;
+    color: white;
 }
 
 .teclado{

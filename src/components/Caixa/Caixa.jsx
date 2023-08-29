@@ -15,9 +15,8 @@ function InputsDiversos({ onClick, classInput, value, classDiv }) {
   return (
     <div
       className={classDiv}
-      onClick={onClick}
-    >
-      <input className={classInput} type='text' value={value} disabled />
+      onClick={onClick}>
+      <input className={classInput} type='text' value={value} />
     </div>
   )
 }
