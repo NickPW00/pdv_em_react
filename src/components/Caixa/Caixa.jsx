@@ -16,7 +16,8 @@ function InputsDiversos({ onClick, classInput, value, classDiv }) {
     <div
       className={classDiv}
       onClick={onClick}>
-      <input className={classInput} type='text' value={value} />
+        {value}
+      {/* <input className={classInput} type='text' value={value} /> */}
     </div>
   )
 }
@@ -85,16 +86,16 @@ export default function EscreverCodigo() {
         {/* Inputs envoltos em div para que assim as divs contenham a função que faça a conversão de onde será escrito. */}
         <InputsDiversos
           onClick={() => setSelecionado(false)}
-          classDiv={"caixa_codigo_div"}
-          classInput={`caixa__codigo_input ${selecionado ? '' : 'borda_grossa'}`}
+         /*  classDiv={"caixa_codigo_div"} */
+          classDiv={`caixa__codigo_input ${selecionado ? '' : 'borda_grossa'}`}
           value={codigo}
         />
         <div className='caixa__quant'>
           <span>Quantidade</span>
           <InputsDiversos
             onClick={() => setSelecionado(true)}
-            classDiv={"caixa_quant_div"}
-            classInput={`caixa__quant_input ${selecionado ? 'borda_grossa' : ''}`}
+            /* classDiv={"caixa_quant_div"} */
+            classDiv={`caixa__quant_input ${selecionado ? 'borda_grossa' : ''}`}
             value={quant}
           />
         </div>
