@@ -9,7 +9,7 @@ const Metodo = ({ onSelectMethod }) => {
   return (
     <div className='method_overlay'>
       <div className='method_window'>
-        <p>MÉTODO DE PAGAMENTO</p>
+        <p className='method_title'>MÉTODO DE PAGAMENTO</p>
         <div className='method_payment' onClick={() => handleMethodClick('CRÉDITO')}>CRÉDITO</div>
         <div className='method_payment' onClick={() => handleMethodClick('DÉBITO')}>DÉBITO</div>
         <div className='method_payment' onClick={() => handleMethodClick('PIX')}>PIX</div>
