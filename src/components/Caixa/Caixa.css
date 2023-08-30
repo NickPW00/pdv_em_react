@@ -13,12 +13,6 @@
     bottom: 0;
 }
 
-input{
-    border: none;
-    outline: none;
-    height: auto;
-    resize: none;
-}
 
 .inputbox{
     display: flex;
@@ -30,7 +24,7 @@ input{
 
 .caixa_resul{
     background-color: #332E2E;
-    width: 90%;
+    width: 90vw;
     height: 48px;
     border-radius: 100px;
     margin-bottom: 5px;
@@ -39,17 +33,19 @@ input{
     font-weight: 600;
     font-size: 24px;
     color: white;
+    border: none;
 }
 
 .caixa__codigo_value{
-    display: inline;
-    width: 90.5%;
+    display: flex;
+    width: 90vw;
     margin-bottom: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #332E2E;
     height: 48px;
     border-radius: 100px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 800;
     font-size: 24px;
     color: white;
@@ -57,7 +53,7 @@ input{
 
 .caixa__quant{
     font-weight: 800;
-    width: 90% ;
+    width: 90vw ;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -65,15 +61,18 @@ input{
 }
 
 .caixa__quant_value{
+    display: flex;
     margin-bottom: 5px;
     background-color: #332E2E;
-    width: 40%;
+    width: 40vw;
     height: 4vh;
     border-radius: 100px;
     text-align: center;
     font-weight: 800;
     font-size: 18px;
     color: white;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -88,6 +87,7 @@ input{
 
 .teclas{
     width: 24vw;
+    max-width: 100px;
     justify-self: center;
     border-radius: 10px;
     background-color: #332E2E;
@@ -124,7 +124,7 @@ input{
 }
 
 .teclas, .teclas__apagar, .teclas__confirmar{
-    height: 11vh;
+    height: 10.5vh;
 }
 
 .borda_grossa{
