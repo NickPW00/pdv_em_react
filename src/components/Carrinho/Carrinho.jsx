@@ -1,5 +1,5 @@
 import Metodo from '../Metodo/Metodo';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import produtosData from '../../data/data.json'
 import { produtosAdicionados } from '../Caixa/Caixa';
@@ -27,7 +27,7 @@ function MenuCarrinho() {
 
   const handleMethodSelect = (method) => {
     setSelectedMethod(method);
-    setMostrarMetodo(false); 
+    setMostrarMetodo(false);
   };
 
   return (
@@ -76,14 +76,14 @@ function Carrinho() {
   function novoMap() {
     return (
       elementos.map((produto, index) => (
-        <ProductCard 
+        <ProductCard
           key={produto.id}
           product={produto}
           onDelete={() => removerElemento(index)}
         />
       ))
     );
-  } 
+  }
 
   useEffect(() => {
     setLista(novoMap());
@@ -91,12 +91,12 @@ function Carrinho() {
 
   return (
     <div className='container_cart'>
-       {lista}
+      {lista}
       {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
       {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
-      <MenuCarrinho/>
+      <MenuCarrinho />
       {/* <button onClick={limparLista}>Limpar Carrinho</button> */}
-     
+
     </div>
   );
 }

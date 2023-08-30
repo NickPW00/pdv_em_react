@@ -4,7 +4,6 @@ import produtosData from '../../data/data.json'
 
 export const produtosAdicionados = []
 
-/* Componente base para os botões. */
 function Teclas({ numero, funcao, className }) {
   return (
     <button className={className} onClick={funcao}>{numero}</button>
@@ -17,7 +16,6 @@ function InputsDiversos({ onClick, value, className }) {
       className={className}
       onClick={onClick}>
         {value}
-      {/* <input className={classInput} type='text' value={value} /> */}
     </div>
   )
 }
@@ -27,6 +25,7 @@ export default function EscreverCodigo() {
   const [quant, setQuant] = useState('');
   const [produto, setProduto] = useState('');
   const [selecionado, setSelecionado] = useState(false);
+  const [timerAdic, setTimerAdic] = useState(false);
   const numeros = [];
 
   const prodNaoEncontrado = 'Produto não encontrado...'
@@ -40,7 +39,11 @@ export default function EscreverCodigo() {
     } else if (!produtoEncontrado && codigo !== '') {
       setProduto(prodNaoEncontrado);
     } else {
-      setProduto(buscProd);
+      if(timerAdic) {
+        setProduto(prodAdicionado)
+        setTimeout(() => {setProduto(buscProd)}, 2000)
+        setTimerAdic(false)
+      } else setProduto(buscProd);
     }
   }, [codigo])
 
@@ -72,7 +75,7 @@ export default function EscreverCodigo() {
           quant: quant
         }
       )
-      console.log(produtosAdicionados)
+      setTimerAdic(true)
       setQuant('');
       setCodigo('');
     }
@@ -82,8 +85,6 @@ export default function EscreverCodigo() {
     <div className='caixa'>
       <div className='inputbox'>
         <input class='caixa_resul' type='text' value={produto} disabled />
-        {/* Inputs desabilitados para não serem acessados pelo teclado do computador. */}
-        {/* Inputs envoltos em div para que assim as divs contenham a função que faça a conversão de onde será escrito. */}
         <InputsDiversos
           onClick={() => setSelecionado(false)}
           className={`caixa__codigo_value ${selecionado ? '' : 'borda_grossa'}`}
