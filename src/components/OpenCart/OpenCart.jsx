@@ -20,9 +20,7 @@ function OpenCart() {
       </button>
       {showCart && (
         <div className='cart_overlay'>
-          <div className='cart_container'>
-            <Carrinho />
-          </div>
+            <Carrinho />   
         </div>
       )}
     </div>

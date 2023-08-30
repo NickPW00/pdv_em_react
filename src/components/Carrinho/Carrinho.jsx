@@ -91,11 +91,12 @@ function Carrinho() {
 
   return (
     <div className='container_cart'>
+       {lista}
       {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
       {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
       <MenuCarrinho/>
       {/* <button onClick={limparLista}>Limpar Carrinho</button> */}
-      {lista}
+     
     </div>
   );
 }

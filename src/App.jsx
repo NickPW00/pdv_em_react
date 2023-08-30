@@ -9,7 +9,6 @@ function App() {
     <div className='main'>
       {/* <Carrinho/> */}
       <OpenCart/>
-
       <Caixa/>
     </div>
   );

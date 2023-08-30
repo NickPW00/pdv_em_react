@@ -94,6 +94,7 @@
     width: 100%;
     border: none;
     color: white;
+    margin-bottom: 1vh;
 }
 
 .teclas, .teclas__apagar, .teclas__confirmar{
