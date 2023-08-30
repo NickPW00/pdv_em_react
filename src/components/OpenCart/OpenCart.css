@@ -2,13 +2,6 @@
   text-align: center;
 }
 
-.cart_container {
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  /* Para ficar por cima de outras coisas */
-}
 
 .close_cart_btn {
   position: absolute;
@@ -30,7 +23,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 10vh;
   border-radius: 5px;
 }
 
@@ -39,7 +32,9 @@
 .open_cart_btn {
   background-color: #A98467;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding: 12px;
+  padding: 5px;
+  height: 4vh;
+  width: 50vw;
   border-radius: 100px;
   border: none;
 }

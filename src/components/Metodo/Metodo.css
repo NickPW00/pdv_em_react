@@ -6,14 +6,12 @@
     padding-top: 20px;
     border-radius: 10px;
     background-color: #A98467;
-    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
-    height: 80vh;
-    bottom: 0;
     left: 0;
     z-index: 2;
-
-
+    height: 82vh;
+    max-height: 88vh;
+    bottom: 0;
 
 }
 .method_title{
