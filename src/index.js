@@ -5,11 +5,22 @@ import Caixa from './components/Caixa/Caixa'
 import OpenCart from './components/OpenCart/OpenCart';
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import Carrinho from './components/Carrinho/Carrinho.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Caixa />, 
+    element: <App />, 
+    children: [
+      {
+        path: "/",
+        element: <Caixa />
+      },
+      {
+        path: "/carrinho",
+        element: <Carrinho />
+      }
+    ]
   }
 ]);
 
