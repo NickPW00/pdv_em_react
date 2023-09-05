@@ -4,15 +4,18 @@ import ProductCard from '../ProductCard/ProductCard';
 import produtosData from '../../data/data.json'
 import { produtosAdicionados } from '../Caixa/Caixa';
 import './Carrinho.css'
+import { useNavigate } from 'react-router-dom';
 
 let chaveAtivacao = []
 
 function MenuCarrinho() {
   //pro botao do metodo de pagmaneto
+  const navigate = useNavigate()
   const [mostrarMetodo, setMostrarMetodo] = useState(false);
   const [valorTotal, setValorTotal] = useState(0);
   const handleBotaoClick = () => {
     setMostrarMetodo(true);
+    return navigate("/carrinho/metodo")
   };
 
   useEffect(() => {
@@ -33,21 +36,17 @@ function MenuCarrinho() {
   return (
     <div className="menu_cart">
       <div className="menu_total">
-        <div className="menu_total_rs">TOTAL: R$ {valorTotal}</div>
-        <div className="menu_total_resultado">RESULTADO</div>
+        <p className="menu_total_rs">TOTAL: R$ {valorTotal}</p>
+        <p className="menu_total_resultado">RESULTADO</p>
       </div>
-
       <div className="menu_confirm">
         <button className='menu_confirm_metodo' id='btn_cart' onClick={handleBotaoClick}>
           METODO
         </button>
-
         <div className='menu_metodo_selecionado'>
           {selectedMethod ? `Método selecionado: ${selectedMethod}` : ''}
         </div>
-
         {mostrarMetodo && <Metodo onSelectMethod={handleMethodSelect} />}
-
         {/* NESSE CASO SERÁ EM BREVECRIADO UM COMPONENTE PARA FINALIZAR A COMPRA, PROVAVELMENTE UM POPUP */}
         <button className="menu_confirm_finalizar" id="btn_cart">
           FINALIZAR
@@ -92,11 +91,8 @@ function Carrinho() {
   return (
     <div className='container_cart'>
       {lista}
-      {/* AQUI VAI FICAR O CONTAINER COM OS ITENS QUE FORAM SELECIONADOS NO "CAIXA" */}
-      {/* E O MENU CARRINHO VAI FICAR NO FIM DO CONTAINER_CART */}
       <MenuCarrinho />
       {/* <button onClick={limparLista}>Limpar Carrinho</button> */}
-
     </div>
   );
 }

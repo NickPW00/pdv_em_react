@@ -100,7 +100,6 @@ export default function EscreverCodigo() {
         </div>
       </div>
       <div className='teclado'>
-        {/* Map para criar as teclas com numero. */}
         {
           numeros
             .map(item => {

@@ -1,9 +1,13 @@
 import React from 'react';
 import './Metodo.css';
+import { useNavigate } from 'react-router';
 
 const Metodo = ({ onSelectMethod }) => {
+  const navigate = useNavigate()
+
   const handleMethodClick = (method) => {
     onSelectMethod(method);
+    return navigate("/carrinho")
   };
 
   return (
