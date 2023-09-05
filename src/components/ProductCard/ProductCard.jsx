@@ -21,7 +21,7 @@ function ProductCard({ product, onDelete }) {
         <div className="quantity">Quantidade: {product.quant} {un ? 'g' : 'un'}</div>
         <div className="price-per-kg">Preço por {un ? 'kg' : 'un'} R${product.preco}</div>
       </div>
-      <div className="price">Preço: R${(product.precoTotal/(un ? 1000 : 1)).toFixed(2)}</div>
+      <div className="price">Preço: R${product.precoTotal.toFixed(2)}</div>
     </div>
   );
 };

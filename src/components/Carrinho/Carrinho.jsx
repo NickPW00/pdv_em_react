@@ -47,7 +47,6 @@ function MenuCarrinho() {
           {selectedMethod ? `Método selecionado: ${selectedMethod}` : ''}
         </div>
         {mostrarMetodo && <Metodo onSelectMethod={handleMethodSelect} />}
-        {/* NESSE CASO SERÁ EM BREVECRIADO UM COMPONENTE PARA FINALIZAR A COMPRA, PROVAVELMENTE UM POPUP */}
         <button className="menu_confirm_finalizar" id="btn_cart">
           FINALIZAR
         </button>

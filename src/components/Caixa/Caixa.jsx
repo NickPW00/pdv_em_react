@@ -64,12 +64,13 @@ export default function EscreverCodigo() {
   function handleConfirmarNumeros() {
     if (produto !== prodNaoEncontrado && quant !== '') {
       const produtoEncontrado = produtosData.find(produto => produto.codigo === codigo);
+      const precoTotal = codigo.slice(-2) === '01' ? (produtoEncontrado.preco * quant) / 100 : produtoEncontrado.preco * quant;
       produtosAdicionados.push(
         {
           id: produtoEncontrado.id,
           nome: produtoEncontrado.nome,
           preco: produtoEncontrado.preco,
-          precoTotal: produtoEncontrado.preco * quant,
+          precoTotal: precoTotal,
           imagemuri: produtoEncontrado.imagemuri,
           codigo: codigo,
           quant: quant
