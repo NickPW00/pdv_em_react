@@ -26,6 +26,7 @@ export default function EscreverCodigo() {
   const [produto, setProduto] = useState('');
   const [selecionado, setSelecionado] = useState(false);
   const [timerAdic, setTimerAdic] = useState(false);
+  const [posfixo, setPosfixo] = useState('');
   const numeros = [];
 
   const prodNaoEncontrado = 'Produto não encontrado...'
@@ -36,8 +37,10 @@ export default function EscreverCodigo() {
     const produtoEncontrado = produtosData.find(produto => produto.codigo === codigo);
     if (produtoEncontrado) {
       setProduto(produtoEncontrado.nome); // Defina qual propriedade do produto deseja exibir
+      setPosfixo(codigo.slice(-2) === '01' ? 'g' : 'un')
     } else if (!produtoEncontrado && codigo !== '') {
       setProduto(prodNaoEncontrado);
+      setPosfixo('')
     } else {
       if(timerAdic) {
         setProduto(prodAdicionado)
@@ -92,11 +95,11 @@ export default function EscreverCodigo() {
           value={codigo}
         />
         <div className='caixa__quant'>
-          <span>Quantidade</span>
+          <span style={{fontSize: 22}}>Quantidade</span>
           <InputsDiversos
             onClick={() => setSelecionado(true)}
             className={`caixa__quant_value ${selecionado ? 'borda_grossa' : ''}`}
-            value={quant}
+            value={quant + ' ' + posfixo}
           />
         </div>
       </div>
