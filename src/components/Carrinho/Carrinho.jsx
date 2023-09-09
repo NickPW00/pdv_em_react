@@ -37,7 +37,6 @@ function MenuCarrinho() {
     <div className="menu_cart">
       <div className="menu_total">
         <p className="menu_total_rs">TOTAL: R$ {valorTotal}</p>
-        <p className="menu_total_resultado">RESULTADO</p>
       </div>
       <div className="menu_confirm">
         <button className='menu_confirm_metodo' id='btn_cart' onClick={handleBotaoClick}>

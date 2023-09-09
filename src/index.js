@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-
 import App from './App.jsx';
 import Caixa from './components/Caixa/Caixa'
 import Carrinho from './components/Carrinho/Carrinho.jsx';
