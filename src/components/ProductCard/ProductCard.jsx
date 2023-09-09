@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./ProductCard.css"
 
 function ProductCard({ product, onDelete }) {
-  const [un, setUn] = useState(verificarFormaUnidadeOuKg)
+  const un = verificarFormaUnidadeOuKg
 
   function verificarFormaUnidadeOuKg() {
     let ultimosDoisNumeros = product.codigo.slice(-2);
@@ -21,7 +21,7 @@ function ProductCard({ product, onDelete }) {
         <div className="quantity">Quantidade: {product.quant} {un ? 'g' : 'un'}</div>
         <div className="price-per-kg">Preço por {un ? 'kg' : 'un'} R${product.preco}</div>
       </div>
-      <div className="price">Preço: R${(product.precoTotal/(un ? 1000 : 1)).toFixed(2)}</div>
+      <div className="price">Preço: R${product.precoTotal.toFixed(2)}</div>
     </div>
   );
 };

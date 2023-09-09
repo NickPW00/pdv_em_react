@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
 import './OpenCart.css';
-import Carrinho from '../Carrinho/Carrinho';
+import { Link } from 'react-router-dom';
 
 function OpenCart() {
-  const [showCart, setShowCart] = useState(false);
+  const [showCart, setShowCart] = useState(true);
 
   const handleShowCart = () => {
     setShowCart(!showCart);
   };
 
-  const handleCloseCart = () => {
-    setShowCart(false);
-  };
-
   return (
     <div className='open_cart'>
-      <button className='open_cart_btn' onClick={handleShowCart}>
-        {showCart ? 'FECHAR CARRINHO' : 'ABRIR CARRINHO'}
-      </button>
-      {showCart && (
-        <div className='cart_overlay'>
-            <Carrinho />   
-        </div>
-      )}
+      {
+        showCart ? 
+        <Link onClick={handleShowCart} className='open_cart_btn' to="/carrinho">ABRIR CARRINHO</Link> :
+        <Link onClick={handleShowCart} className='open_cart_btn' to="/">FECHAR CARRINHO</Link>
+      }
     </div>
   );
 }
