@@ -86,7 +86,10 @@ function Carrinho() {
 
   return (
     <div className='container_cart'>
+      <div className='test'>
       {lista}
+      </div>
+
       <MenuCarrinho />
       {/* <button onClick={limparLista}>Limpar Carrinho</button> */}
     </div>
