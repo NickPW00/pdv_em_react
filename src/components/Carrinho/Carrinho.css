@@ -36,6 +36,8 @@
   border-radius: 100px;
   font-weight: 800;
   font-size: 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
 }
 .menu_confirm{
   display: flex;
@@ -54,4 +56,5 @@
   font-weight: 800;
   border-radius: 12px;
   border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
