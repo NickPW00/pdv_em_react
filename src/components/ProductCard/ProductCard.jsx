@@ -16,12 +16,14 @@ function ProductCard({ product, onDelete }) {
   return (
     <div className="card">
       <div className="product-name">{product.nome}</div>
-      <div className="delete-button" onClick={() => onDelete(product.id)}>🗑️</div>
+      <div className="delete-button" onClick={() => onDelete(product.id)}></div>
+     
+     
+      <div className="price-per-kg">Preço p/ {un ? 'kg' : 'un'} R${product.preco}</div>
       <div className="info">
-        <div className="quantity">Quantidade: {product.quant} {un ? 'g' : 'un'}</div>
-        <div className="price-per-kg">Preço por {un ? 'kg' : 'un'} R${product.preco}</div>
+        <div className="quantity">QTD: {product.quant} {un ? 'g' : 'un'}</div>
+        <div className="price">Preço: R${product.precoTotal.toFixed(2)}</div>
       </div>
-      <div className="price">Preço: R${product.precoTotal.toFixed(2)}</div>
     </div>
   );
 };
