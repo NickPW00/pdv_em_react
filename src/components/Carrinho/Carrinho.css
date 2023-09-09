@@ -12,11 +12,9 @@
   left: 0;
   z-index: 2;
 }
-
 .hidden {
   display: none;
 }
-
 .menu_cart{
   display: flex;
   position: absolute;
@@ -28,7 +26,6 @@
   width: 100%;
 
 }
-
 .menu_total{
   display: flex;
   justify-content: space-around;
@@ -40,8 +37,6 @@
   font-weight: 800;
   font-size: 32px;
 }
-
-
 .menu_confirm{
   display: flex;
   justify-content: space-between;
@@ -50,20 +45,8 @@
   border: none;
 }
 
-.menu_metodo_selecionado {
-  padding: 5px;
-}
-
-.menu_confirm_metodo{
-  background-color: #332E2E;
-  color: rgb(0, 0, 0);
-}
-
-.menu_confirm_finalizar{
-  background-color: #332E2E;
-}
-
 #btn_cart{
+  background-color: #332E2E;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color:#FFF9F4 ;

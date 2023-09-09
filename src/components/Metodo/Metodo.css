@@ -29,11 +29,13 @@
     width: 90%;
     height: 32px;
     font-weight: 800;
+    font-size: 24px;
     color: white;
     text-align: right;
     margin-bottom: 5px;
     border-radius: 100px;
     border:none;
+    line-height: 1.2;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
   

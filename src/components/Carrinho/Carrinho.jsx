@@ -40,11 +40,9 @@ function MenuCarrinho() {
       </div>
       <div className="menu_confirm">
         <button className='menu_confirm_metodo' id='btn_cart' onClick={handleBotaoClick}>
-          METODO
+        {selectedMethod ? `${selectedMethod}` : 'METODO'}
         </button>
-        <div className='menu_metodo_selecionado'>
-          {selectedMethod ? `Método selecionado: ${selectedMethod}` : ''}
-        </div>
+     
         {mostrarMetodo && <Metodo onSelectMethod={handleMethodSelect} />}
         <button className="menu_confirm_finalizar" id="btn_cart">
           FINALIZAR
