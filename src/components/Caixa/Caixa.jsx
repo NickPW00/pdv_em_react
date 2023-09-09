@@ -51,9 +51,13 @@ export default function EscreverCodigo() {
   }, [codigo])
 
   /* Um FOR para criar os numeros que quer nas Teclas, para mais tarde, fazer um map */
-  for (let i = 9; i >= 0; i--) {
-    numeros.push(`${i}`)
+  for (let i = 0; i <= 9; i++) {
+    if (i === 0) {
+      continue; // Pula a iteração se i for igual a 0.
+    }
+    numeros.push(`${i}`);
   }
+  numeros.push('0'); 
 
   /* Funções para alternar qual o input que será preenchido pelo usuario */
   function handleDigitarNumeros(item) {
