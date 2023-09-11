@@ -72,25 +72,19 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* width */
+/* SCROLL BAR */
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 100px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: #D0B6A2; 
   border-radius: 100px;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #725844; 
   border-radius: 100px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #635042; 
 }
