@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "nome": "Garrafa de Água",
+        "nome": "Garrafa de Água 500ml",
         "preco": 2.99,
         "imagemuri": "",
         "codigo": "110000"
@@ -23,9 +23,9 @@
     {
         "id": "4",
         "nome": "Pão de Forma",
-        "preco": 1.99,
+        "preco": 6.99,
         "imagemuri": "",
-        "codigo": "660101"
+        "codigo": "660100"
     },
     {
         "id": "5",
@@ -36,22 +36,22 @@
     },
     {
         "id": "6",
-        "nome": "Leite",
-        "preco": 2.49,
+        "nome": "Leite Quatá",
+        "preco": 4.49,
         "imagemuri": "",
         "codigo": "101000"
     },
     {
         "id": "7",
         "nome": "Pacote de Arroz",
-        "preco": 4.29,
+        "preco": 5.29,
         "imagemuri": "",
         "codigo": "151000"
     },
     {
         "id": "8",
-        "nome": "Pacote de Massa",
-        "preco": 1.89,
+        "nome": "Macarrão Semola",
+        "preco": 5.89,
         "imagemuri": "",
         "codigo": "181000"
     },
@@ -71,7 +71,7 @@
     },
     {
         "id": "11",
-        "nome": "Café em Grãos",
+        "nome": "Café Pimpinela 500g",
         "preco": 9.75,
         "imagemuri": "",
         "codigo": "221000"
@@ -79,21 +79,21 @@
     {
         "id": "12",
         "nome": "Farinha de Trigo",
-        "preco": 2.49,
+        "preco": 6.49,
         "imagemuri": "",
         "codigo": "231000"
     },
     {
         "id": "13",
-        "nome": "Açúcar",
-        "preco": 1.29,
+        "nome": "Açúcar União",
+        "preco": 2.29,
         "imagemuri": "",
         "codigo": "241000"
     },
     {
         "id": "14",
-        "nome": "Cerveja",
-        "preco": 3.99,
+        "nome": "Heineken 265ml",
+        "preco": 3.29,
         "imagemuri": "",
         "codigo": "251000"
     },
@@ -113,8 +113,8 @@
     },
     {
         "id": "17",
-        "nome": "Cereal Matinal",
-        "preco": 4.99,
+        "nome": "Nescau Cereal",
+        "preco": 12.99,
         "imagemuri": "",
         "codigo": "281000"
     },
@@ -442,14 +442,14 @@
     },
     {
         "id": "64",
-        "nome": "Água Tônica",
-        "preco": 2.75,
+        "nome": "Reator Nuclear XT8000 MK1",
+        "preco": 29000.20,
         "imagemuri": "",
         "codigo": "751000"
     },
     {
         "id": "65",
-        "nome": "Amendoim Torrado",
+        "nome": "Amendoim Muito Torrado",
         "preco": 1.99,
         "imagemuri": "",
         "codigo": "761000"
