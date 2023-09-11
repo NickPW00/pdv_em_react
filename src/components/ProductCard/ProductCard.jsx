@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./ProductCard.css"
 
 function ProductCard({ product, onDelete }) {
-  const un = verificarFormaUnidadeOuKg
+  const un = verificarFormaUnidadeOuKg()
 
   function verificarFormaUnidadeOuKg() {
     let ultimosDoisNumeros = product.codigo.slice(-2);
